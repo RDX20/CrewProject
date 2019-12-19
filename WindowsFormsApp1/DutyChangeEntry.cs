@@ -15,16 +15,7 @@ namespace WindowsFormsApp1
         public DutyChangeEntry()
         {
             InitializeComponent();
-        }
-
-        private void textBox13_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox14_TextChanged(object sender, EventArgs e)
-        {
-
+            
         }
 
         private void buttonBack_Click(object sender, EventArgs e)
@@ -36,7 +27,13 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void DutyChangeEntry_Load(object sender, EventArgs e)
+        {
+            DateTime thisDay = DateTime.Today;
+            textBoxTodayDate.Text = thisDay.ToString("d");
         }
     }
 }

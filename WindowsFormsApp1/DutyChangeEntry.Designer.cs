@@ -70,12 +70,12 @@
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textBoxTodayDate = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.buttonFind = new System.Windows.Forms.Button();
-            this.buttonModify = new System.Windows.Forms.Button();
+            this.buttonSearch = new System.Windows.Forms.Button();
+            this.buttonGo = new System.Windows.Forms.Button();
+            this.buttonSave = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
-            this.buttonAdd = new System.Windows.Forms.Button();
+            this.buttonExit = new System.Windows.Forms.Button();
+            this.buttonModify = new System.Windows.Forms.Button();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
@@ -282,8 +282,8 @@
             this.groupBox1.Controls.Add(this.textBox13);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.textBoxTodayDate);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.buttonSearch);
+            this.groupBox1.Controls.Add(this.buttonGo);
             this.groupBox1.Controls.Add(this.textBox5);
             this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Controls.Add(this.textBox3);
@@ -332,7 +332,6 @@
             this.textBox14.TabIndex = 65;
             this.textBox14.Text = "Off-Time-Stn";
             this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox14.TextChanged += new System.EventHandler(this.textBox14_TextChanged);
             // 
             // textBox15
             // 
@@ -513,7 +512,6 @@
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(231, 29);
             this.textBox13.TabIndex = 46;
-            this.textBox13.TextChanged += new System.EventHandler(this.textBox13_TextChanged);
             // 
             // label8
             // 
@@ -535,70 +533,54 @@
             this.textBoxTodayDate.TabIndex = 44;
             this.textBoxTodayDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button2
+            // buttonSearch
             // 
-            this.button2.BackColor = System.Drawing.Color.Salmon;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(493, 15);
-            this.button2.Margin = new System.Windows.Forms.Padding(5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(98, 37);
-            this.button2.TabIndex = 43;
-            this.button2.Text = "Search";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonSearch.BackColor = System.Drawing.Color.Salmon;
+            this.buttonSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSearch.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
+            this.buttonSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSearch.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSearch.ForeColor = System.Drawing.Color.White;
+            this.buttonSearch.Location = new System.Drawing.Point(493, 15);
+            this.buttonSearch.Margin = new System.Windows.Forms.Padding(5);
+            this.buttonSearch.Name = "buttonSearch";
+            this.buttonSearch.Size = new System.Drawing.Size(98, 37);
+            this.buttonSearch.TabIndex = 43;
+            this.buttonSearch.Text = "Search";
+            this.buttonSearch.UseVisualStyleBackColor = false;
+            this.buttonSearch.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // buttonGo
             // 
-            this.button1.BackColor = System.Drawing.Color.Salmon;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(200, 16);
-            this.button1.Margin = new System.Windows.Forms.Padding(5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(67, 37);
-            this.button1.TabIndex = 42;
-            this.button1.Text = "Go";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonGo.BackColor = System.Drawing.Color.Salmon;
+            this.buttonGo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonGo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
+            this.buttonGo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGo.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGo.ForeColor = System.Drawing.Color.White;
+            this.buttonGo.Location = new System.Drawing.Point(200, 16);
+            this.buttonGo.Margin = new System.Windows.Forms.Padding(5);
+            this.buttonGo.Name = "buttonGo";
+            this.buttonGo.Size = new System.Drawing.Size(67, 37);
+            this.buttonGo.TabIndex = 42;
+            this.buttonGo.Text = "Go";
+            this.buttonGo.UseVisualStyleBackColor = false;
             // 
-            // buttonFind
+            // buttonSave
             // 
-            this.buttonFind.BackColor = System.Drawing.Color.Salmon;
-            this.buttonFind.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonFind.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
-            this.buttonFind.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonFind.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonFind.ForeColor = System.Drawing.Color.White;
-            this.buttonFind.Location = new System.Drawing.Point(157, 465);
-            this.buttonFind.Margin = new System.Windows.Forms.Padding(5);
-            this.buttonFind.Name = "buttonFind";
-            this.buttonFind.Size = new System.Drawing.Size(148, 37);
-            this.buttonFind.TabIndex = 34;
-            this.buttonFind.Text = "Save";
-            this.buttonFind.UseVisualStyleBackColor = false;
-            // 
-            // buttonModify
-            // 
-            this.buttonModify.BackColor = System.Drawing.Color.Salmon;
-            this.buttonModify.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonModify.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
-            this.buttonModify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonModify.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonModify.ForeColor = System.Drawing.Color.White;
-            this.buttonModify.Location = new System.Drawing.Point(315, 465);
-            this.buttonModify.Margin = new System.Windows.Forms.Padding(5);
-            this.buttonModify.Name = "buttonModify";
-            this.buttonModify.Size = new System.Drawing.Size(135, 37);
-            this.buttonModify.TabIndex = 35;
-            this.buttonModify.Text = "Delete";
-            this.buttonModify.UseVisualStyleBackColor = false;
+            this.buttonSave.BackColor = System.Drawing.Color.Salmon;
+            this.buttonSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
+            this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSave.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSave.ForeColor = System.Drawing.Color.White;
+            this.buttonSave.Location = new System.Drawing.Point(157, 465);
+            this.buttonSave.Margin = new System.Windows.Forms.Padding(5);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(148, 37);
+            this.buttonSave.TabIndex = 34;
+            this.buttonSave.Text = "Save";
+            this.buttonSave.UseVisualStyleBackColor = false;
             // 
             // buttonDelete
             // 
@@ -608,29 +590,45 @@
             this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDelete.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDelete.ForeColor = System.Drawing.Color.White;
-            this.buttonDelete.Location = new System.Drawing.Point(460, 464);
+            this.buttonDelete.Location = new System.Drawing.Point(315, 465);
             this.buttonDelete.Margin = new System.Windows.Forms.Padding(5);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(140, 37);
-            this.buttonDelete.TabIndex = 37;
-            this.buttonDelete.Text = "Exit";
+            this.buttonDelete.Size = new System.Drawing.Size(135, 37);
+            this.buttonDelete.TabIndex = 35;
+            this.buttonDelete.Text = "Delete";
             this.buttonDelete.UseVisualStyleBackColor = false;
             // 
-            // buttonAdd
+            // buttonExit
             // 
-            this.buttonAdd.BackColor = System.Drawing.Color.Salmon;
-            this.buttonAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
-            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdd.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdd.ForeColor = System.Drawing.Color.White;
-            this.buttonAdd.Location = new System.Drawing.Point(7, 465);
-            this.buttonAdd.Margin = new System.Windows.Forms.Padding(5);
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(140, 37);
-            this.buttonAdd.TabIndex = 36;
-            this.buttonAdd.Text = "Modify";
-            this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonExit.BackColor = System.Drawing.Color.Salmon;
+            this.buttonExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
+            this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonExit.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExit.ForeColor = System.Drawing.Color.White;
+            this.buttonExit.Location = new System.Drawing.Point(460, 464);
+            this.buttonExit.Margin = new System.Windows.Forms.Padding(5);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(140, 37);
+            this.buttonExit.TabIndex = 37;
+            this.buttonExit.Text = "Exit";
+            this.buttonExit.UseVisualStyleBackColor = false;
+            // 
+            // buttonModify
+            // 
+            this.buttonModify.BackColor = System.Drawing.Color.Salmon;
+            this.buttonModify.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonModify.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OrangeRed;
+            this.buttonModify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonModify.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonModify.ForeColor = System.Drawing.Color.White;
+            this.buttonModify.Location = new System.Drawing.Point(7, 465);
+            this.buttonModify.Margin = new System.Windows.Forms.Padding(5);
+            this.buttonModify.Name = "buttonModify";
+            this.buttonModify.Size = new System.Drawing.Size(140, 37);
+            this.buttonModify.TabIndex = 36;
+            this.buttonModify.Text = "Modify";
+            this.buttonModify.UseVisualStyleBackColor = false;
             // 
             // textBox19
             // 
@@ -662,14 +660,15 @@
             this.Controls.Add(this.label21);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.buttonFind);
-            this.Controls.Add(this.buttonModify);
+            this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonDelete);
-            this.Controls.Add(this.buttonAdd);
+            this.Controls.Add(this.buttonExit);
+            this.Controls.Add(this.buttonModify);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "DutyChangeEntry";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Duty Change Entry";
+            this.Load += new System.EventHandler(this.DutyChangeEntry_Load);
             this.panel2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -701,12 +700,12 @@
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBoxTodayDate;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button buttonFind;
-        private System.Windows.Forms.Button buttonModify;
+        private System.Windows.Forms.Button buttonSearch;
+        private System.Windows.Forms.Button buttonGo;
+        private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Button buttonDelete;
-        private System.Windows.Forms.Button buttonAdd;
+        private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.Button buttonModify;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox textBox14;

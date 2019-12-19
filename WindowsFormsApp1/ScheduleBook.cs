@@ -38,5 +38,10 @@ namespace WindowsFormsApp1
             MainForm mform = new MainForm();
             mform.Show();
         }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
