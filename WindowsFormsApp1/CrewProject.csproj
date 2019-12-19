@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{663C9DE7-1BD1-4348-8710-43EA1D931D20}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoBooking.Designer.cs">
+      <DependentUpon>AutoBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connect.cs" />
+    <Compile Include="CrewBioData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrewBioData.Designer.cs">
+      <DependentUpon>CrewBioData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoubleDutyEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoubleDutyEntry.Designer.cs">
+      <DependentUpon>DoubleDutyEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DutyChangeEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DutyChangeEntry.Designer.cs">
+      <DependentUpon>DutyChangeEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManualBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManualBooking.Designer.cs">
+      <DependentUpon>ManualBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonRunningDuty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NonRunningDuty.Designer.cs">
+      <DependentUpon>NonRunningDuty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProperSets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProperSets.Designer.cs">
+      <DependentUpon>ProperSets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RequestBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestBook.Designer.cs">
+      <DependentUpon>RequestBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SafetyCourses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SafetyCourses.Designer.cs">
+      <DependentUpon>SafetyCourses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheduleBook.Designer.cs">
+      <DependentUpon>ScheduleBook.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AutoBooking.resx">
+      <DependentUpon>AutoBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrewBioData.resx">
+      <DependentUpon>CrewBioData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoubleDutyEntry.resx">
+      <DependentUpon>DoubleDutyEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DutyChangeEntry.resx">
+      <DependentUpon>DutyChangeEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManualBooking.resx">
+      <DependentUpon>ManualBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NonRunningDuty.resx">
+      <DependentUpon>NonRunningDuty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProperSets.resx">
+      <DependentUpon>ProperSets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestBook.resx">
+      <DependentUpon>RequestBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SafetyCourses.resx">
+      <DependentUpon>SafetyCourses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleBook.resx">
+      <DependentUpon>ScheduleBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\avatar-512.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
