@@ -91,6 +91,7 @@
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(274, 29);
             this.textBoxUsername.TabIndex = 3;
+            this.textBoxUsername.Text = "parth";
             // 
             // label2
             // 
@@ -141,6 +142,7 @@
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(274, 29);
             this.textBoxPassword.TabIndex = 5;
+            this.textBoxPassword.Text = "parth";
             this.textBoxPassword.UseSystemPasswordChar = true;
             // 
             // contextMenuStrip1

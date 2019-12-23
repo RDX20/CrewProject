@@ -54,6 +54,7 @@
       <DependentUpon>AutoBooking.cs</DependentUpon>
     </Compile>
     <Compile Include="Connect.cs" />
+    <Compile Include="Crew.cs" />
     <Compile Include="CrewBioData.cs">
       <SubType>Form</SubType>
     </Compile>

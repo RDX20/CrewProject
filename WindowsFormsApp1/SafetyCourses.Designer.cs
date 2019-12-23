@@ -179,9 +179,9 @@
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(4, 212);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(205, 25);
+            this.label15.Size = new System.Drawing.Size(204, 25);
             this.label15.TabIndex = 83;
-            this.label15.Text = "UR Refresher Done:";
+            this.label15.Text = "VR Refresher Done:";
             // 
             // textBox11
             // 
