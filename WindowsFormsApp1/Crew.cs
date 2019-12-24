@@ -37,7 +37,7 @@ namespace WindowsFormsApp1
             command.Parameters.Add("@vis", MySqlDbType.VarChar).Value = vision;
             command.Parameters.Add("@grad", MySqlDbType.VarChar).Value = gradation;
             command.Parameters.Add("@lob", MySqlDbType.VarChar).Value = lobby;
-            command.Parameters.Add("@prop", MySqlDbType.VarChar).Value = proper;
+            command.Parameters.Add("@prop", MySqlDbType.Int32).Value = proper;
             command.Parameters.Add("@cli", MySqlDbType.VarChar).Value = cliCodeName;
             command.Parameters.Add("@rem", MySqlDbType.VarChar).Value = remarks;
 
@@ -65,6 +65,24 @@ namespace WindowsFormsApp1
             conn.closeConn();
 
             return res;
+        }
+
+        public DataRow searchcrew(Int32 crewid)
+        {
+           
+            MySqlCommand command = new MySqlCommand("SELECT * FROM biodata where CrewId = @cid", conn.GetConnection());
+            command.Parameters.Add("@cid", MySqlDbType.Int32).Value = crewid;
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            DataTable table = new DataTable();
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+            if (table.Rows.Count > 0)
+            {
+                DataRow result = table.Rows[0];
+                return result;
+            }
+            else
+                return null;
         }
     }
 }

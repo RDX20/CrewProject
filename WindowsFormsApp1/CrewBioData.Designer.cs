@@ -102,7 +102,6 @@
             this.textBoxAddress1.Name = "textBoxAddress1";
             this.textBoxAddress1.Size = new System.Drawing.Size(668, 29);
             this.textBoxAddress1.TabIndex = 82;
-            this.textBoxAddress1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label11
             // 
@@ -141,7 +140,6 @@
             this.textBoxAddress2.Name = "textBoxAddress2";
             this.textBoxAddress2.Size = new System.Drawing.Size(668, 29);
             this.textBoxAddress2.TabIndex = 72;
-            this.textBoxAddress2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
             // 
@@ -178,7 +176,6 @@
             this.textBoxInitAppoint.Name = "textBoxInitAppoint";
             this.textBoxInitAppoint.Size = new System.Drawing.Size(208, 29);
             this.textBoxInitAppoint.TabIndex = 67;
-            this.textBoxInitAppoint.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
@@ -300,7 +297,6 @@
             this.textBoxRemarks.Name = "textBoxRemarks";
             this.textBoxRemarks.Size = new System.Drawing.Size(679, 29);
             this.textBoxRemarks.TabIndex = 117;
-            this.textBoxRemarks.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // comboBoxBloodGroup
             // 
@@ -366,7 +362,6 @@
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(405, 29);
             this.textBoxEmail.TabIndex = 112;
-            this.textBoxEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // comboBoxCliCodeName
             // 
@@ -411,7 +406,6 @@
             this.textBoxPhNo2.Name = "textBoxPhNo2";
             this.textBoxPhNo2.Size = new System.Drawing.Size(234, 29);
             this.textBoxPhNo2.TabIndex = 108;
-            this.textBoxPhNo2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label21
             // 
@@ -430,7 +424,6 @@
             this.textBoxPhNo1.Name = "textBoxPhNo1";
             this.textBoxPhNo1.Size = new System.Drawing.Size(228, 29);
             this.textBoxPhNo1.TabIndex = 106;
-            this.textBoxPhNo1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // comboBoxStatus
             // 
@@ -438,10 +431,15 @@
             this.comboBoxStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxStatus.FormattingEnabled = true;
             this.comboBoxStatus.Items.AddRange(new object[] {
-            "Status"});
-            this.comboBoxStatus.Location = new System.Drawing.Point(158, 54);
+            "Working",
+            "Transferred",
+            "Retired",
+            "Voluntary retired",
+            "Removal from service",
+            "Medical decatgorised"});
+            this.comboBoxStatus.Location = new System.Drawing.Point(85, 54);
             this.comboBoxStatus.Name = "comboBoxStatus";
-            this.comboBoxStatus.Size = new System.Drawing.Size(201, 28);
+            this.comboBoxStatus.Size = new System.Drawing.Size(274, 28);
             this.comboBoxStatus.TabIndex = 105;
             // 
             // label14
@@ -582,6 +580,7 @@
             this.buttonSearch.TabIndex = 43;
             this.buttonSearch.Text = "Search";
             this.buttonSearch.UseVisualStyleBackColor = false;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // label13
             // 
@@ -600,7 +599,6 @@
             this.textBoxCmsId.Name = "textBoxCmsId";
             this.textBoxCmsId.Size = new System.Drawing.Size(95, 29);
             this.textBoxCmsId.TabIndex = 23;
-            this.textBoxCmsId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
             // 
@@ -620,13 +618,12 @@
             this.textBoxCrewId.ReadOnly = true;
             this.textBoxCrewId.Size = new System.Drawing.Size(95, 29);
             this.textBoxCrewId.TabIndex = 7;
-            this.textBoxCrewId.TextChanged += new System.EventHandler(this.textBoxCrewId_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(73, 55);
+            this.label3.Location = new System.Drawing.Point(4, 53);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 25);
             this.label3.TabIndex = 6;

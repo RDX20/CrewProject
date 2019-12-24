@@ -70,7 +70,7 @@
             this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExit.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonExit.ForeColor = System.Drawing.Color.White;
-            this.buttonExit.Location = new System.Drawing.Point(460, 467);
+            this.buttonExit.Location = new System.Drawing.Point(467, 467);
             this.buttonExit.Margin = new System.Windows.Forms.Padding(5);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(140, 37);
@@ -85,7 +85,7 @@
             this.buttonModify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonModify.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonModify.ForeColor = System.Drawing.Color.White;
-            this.buttonModify.Location = new System.Drawing.Point(7, 468);
+            this.buttonModify.Location = new System.Drawing.Point(14, 468);
             this.buttonModify.Margin = new System.Windows.Forms.Padding(5);
             this.buttonModify.Name = "buttonModify";
             this.buttonModify.Size = new System.Drawing.Size(140, 37);
@@ -100,7 +100,7 @@
             this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDelete.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDelete.ForeColor = System.Drawing.Color.White;
-            this.buttonDelete.Location = new System.Drawing.Point(315, 468);
+            this.buttonDelete.Location = new System.Drawing.Point(322, 468);
             this.buttonDelete.Margin = new System.Windows.Forms.Padding(5);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(135, 37);
@@ -115,7 +115,7 @@
             this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSave.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSave.ForeColor = System.Drawing.Color.White;
-            this.buttonSave.Location = new System.Drawing.Point(157, 468);
+            this.buttonSave.Location = new System.Drawing.Point(164, 468);
             this.buttonSave.Margin = new System.Windows.Forms.Padding(5);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(148, 37);
@@ -398,7 +398,7 @@
             // textBox19
             // 
             this.textBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox19.Location = new System.Drawing.Point(608, 473);
+            this.textBox19.Location = new System.Drawing.Point(615, 473);
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(171, 29);
             this.textBox19.TabIndex = 31;
@@ -409,7 +409,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(629, 445);
+            this.label21.Location = new System.Drawing.Point(636, 445);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(120, 25);
             this.label21.TabIndex = 32;
@@ -419,7 +419,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(787, 514);
+            this.ClientSize = new System.Drawing.Size(800, 507);
             this.Controls.Add(this.textBox19);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.panel2);
