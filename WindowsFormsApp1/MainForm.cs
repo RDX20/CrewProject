@@ -82,7 +82,7 @@ namespace WindowsFormsApp1
 
         private void buttonScheduleBook_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            //this.Hide();
             ScheduleBook schbook = new ScheduleBook();
             schbook.ShowDialog();
         }
@@ -106,7 +106,7 @@ namespace WindowsFormsApp1
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            //this.Hide();
+            this.Hide();
             LoginForm logform = new LoginForm();
             logform.Show();
         }

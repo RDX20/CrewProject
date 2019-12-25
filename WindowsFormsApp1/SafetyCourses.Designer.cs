@@ -31,6 +31,16 @@
             this.label9 = new System.Windows.Forms.Label();
             this.buttonSearch = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dateTimePickerSimDue = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerCompDue = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerVrDue = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerUdzDue = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerMedDue = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerSimD = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerCompD = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerVrD = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerUdzD = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerMedD = new System.Windows.Forms.DateTimePicker();
             this.comboBoxVision = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -60,16 +70,6 @@
             this.buttonModify = new System.Windows.Forms.Button();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.dateTimePickerMedD = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePickerUdzD = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePickerVrD = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePickerCompD = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePickerSimD = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePickerMedDue = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePickerUdzDue = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePickerVrDue = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePickerCompDue = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePickerSimDue = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -138,7 +138,101 @@
             this.groupBox1.Size = new System.Drawing.Size(792, 342);
             this.groupBox1.TabIndex = 40;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // dateTimePickerSimDue
+            // 
+            this.dateTimePickerSimDue.Enabled = false;
+            this.dateTimePickerSimDue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerSimDue.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerSimDue.Location = new System.Drawing.Point(492, 307);
+            this.dateTimePickerSimDue.Name = "dateTimePickerSimDue";
+            this.dateTimePickerSimDue.Size = new System.Drawing.Size(141, 29);
+            this.dateTimePickerSimDue.TabIndex = 121;
+            // 
+            // dateTimePickerCompDue
+            // 
+            this.dateTimePickerCompDue.Enabled = false;
+            this.dateTimePickerCompDue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerCompDue.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerCompDue.Location = new System.Drawing.Point(492, 259);
+            this.dateTimePickerCompDue.Name = "dateTimePickerCompDue";
+            this.dateTimePickerCompDue.Size = new System.Drawing.Size(141, 29);
+            this.dateTimePickerCompDue.TabIndex = 120;
+            // 
+            // dateTimePickerVrDue
+            // 
+            this.dateTimePickerVrDue.Enabled = false;
+            this.dateTimePickerVrDue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerVrDue.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerVrDue.Location = new System.Drawing.Point(492, 210);
+            this.dateTimePickerVrDue.Name = "dateTimePickerVrDue";
+            this.dateTimePickerVrDue.Size = new System.Drawing.Size(141, 29);
+            this.dateTimePickerVrDue.TabIndex = 119;
+            // 
+            // dateTimePickerUdzDue
+            // 
+            this.dateTimePickerUdzDue.Enabled = false;
+            this.dateTimePickerUdzDue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerUdzDue.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerUdzDue.Location = new System.Drawing.Point(492, 164);
+            this.dateTimePickerUdzDue.Name = "dateTimePickerUdzDue";
+            this.dateTimePickerUdzDue.Size = new System.Drawing.Size(141, 29);
+            this.dateTimePickerUdzDue.TabIndex = 118;
+            // 
+            // dateTimePickerMedDue
+            // 
+            this.dateTimePickerMedDue.Enabled = false;
+            this.dateTimePickerMedDue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerMedDue.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerMedDue.Location = new System.Drawing.Point(492, 113);
+            this.dateTimePickerMedDue.Name = "dateTimePickerMedDue";
+            this.dateTimePickerMedDue.Size = new System.Drawing.Size(141, 29);
+            this.dateTimePickerMedDue.TabIndex = 117;
+            // 
+            // dateTimePickerSimD
+            // 
+            this.dateTimePickerSimD.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerSimD.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerSimD.Location = new System.Drawing.Point(182, 304);
+            this.dateTimePickerSimD.Name = "dateTimePickerSimD";
+            this.dateTimePickerSimD.Size = new System.Drawing.Size(136, 29);
+            this.dateTimePickerSimD.TabIndex = 116;
+            // 
+            // dateTimePickerCompD
+            // 
+            this.dateTimePickerCompD.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerCompD.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerCompD.Location = new System.Drawing.Point(210, 256);
+            this.dateTimePickerCompD.Name = "dateTimePickerCompD";
+            this.dateTimePickerCompD.Size = new System.Drawing.Size(134, 29);
+            this.dateTimePickerCompD.TabIndex = 115;
+            // 
+            // dateTimePickerVrD
+            // 
+            this.dateTimePickerVrD.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerVrD.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerVrD.Location = new System.Drawing.Point(219, 208);
+            this.dateTimePickerVrD.Name = "dateTimePickerVrD";
+            this.dateTimePickerVrD.Size = new System.Drawing.Size(135, 29);
+            this.dateTimePickerVrD.TabIndex = 114;
+            // 
+            // dateTimePickerUdzD
+            // 
+            this.dateTimePickerUdzD.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerUdzD.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerUdzD.Location = new System.Drawing.Point(234, 158);
+            this.dateTimePickerUdzD.Name = "dateTimePickerUdzD";
+            this.dateTimePickerUdzD.Size = new System.Drawing.Size(139, 29);
+            this.dateTimePickerUdzD.TabIndex = 113;
+            // 
+            // dateTimePickerMedD
+            // 
+            this.dateTimePickerMedD.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePickerMedD.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerMedD.Location = new System.Drawing.Point(177, 112);
+            this.dateTimePickerMedD.Name = "dateTimePickerMedD";
+            this.dateTimePickerMedD.Size = new System.Drawing.Size(141, 29);
+            this.dateTimePickerMedD.TabIndex = 112;
             // 
             // comboBoxVision
             // 
@@ -249,7 +343,7 @@
             this.buttonEditDue.TabIndex = 66;
             this.buttonEditDue.Text = "Edit Due";
             this.buttonEditDue.UseVisualStyleBackColor = false;
-            this.buttonEditDue.Click += new System.EventHandler(this.button3_Click);
+            this.buttonEditDue.Click += new System.EventHandler(this.buttonEditDue_Click);
             // 
             // label7
             // 
@@ -260,7 +354,6 @@
             this.label7.Size = new System.Drawing.Size(57, 25);
             this.label7.TabIndex = 65;
             this.label7.Text = "Due:";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // buttonGo
             // 
@@ -480,101 +573,6 @@
             this.label21.Size = new System.Drawing.Size(120, 25);
             this.label21.TabIndex = 53;
             this.label21.Text = "Record No:";
-            // 
-            // dateTimePickerMedD
-            // 
-            this.dateTimePickerMedD.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerMedD.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerMedD.Location = new System.Drawing.Point(177, 112);
-            this.dateTimePickerMedD.Name = "dateTimePickerMedD";
-            this.dateTimePickerMedD.Size = new System.Drawing.Size(141, 29);
-            this.dateTimePickerMedD.TabIndex = 112;
-            // 
-            // dateTimePickerUdzD
-            // 
-            this.dateTimePickerUdzD.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerUdzD.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerUdzD.Location = new System.Drawing.Point(234, 158);
-            this.dateTimePickerUdzD.Name = "dateTimePickerUdzD";
-            this.dateTimePickerUdzD.Size = new System.Drawing.Size(139, 29);
-            this.dateTimePickerUdzD.TabIndex = 113;
-            // 
-            // dateTimePickerVrD
-            // 
-            this.dateTimePickerVrD.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerVrD.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerVrD.Location = new System.Drawing.Point(219, 208);
-            this.dateTimePickerVrD.Name = "dateTimePickerVrD";
-            this.dateTimePickerVrD.Size = new System.Drawing.Size(135, 29);
-            this.dateTimePickerVrD.TabIndex = 114;
-            // 
-            // dateTimePickerCompD
-            // 
-            this.dateTimePickerCompD.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerCompD.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerCompD.Location = new System.Drawing.Point(210, 256);
-            this.dateTimePickerCompD.Name = "dateTimePickerCompD";
-            this.dateTimePickerCompD.Size = new System.Drawing.Size(134, 29);
-            this.dateTimePickerCompD.TabIndex = 115;
-            // 
-            // dateTimePickerSimD
-            // 
-            this.dateTimePickerSimD.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerSimD.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerSimD.Location = new System.Drawing.Point(182, 304);
-            this.dateTimePickerSimD.Name = "dateTimePickerSimD";
-            this.dateTimePickerSimD.Size = new System.Drawing.Size(136, 29);
-            this.dateTimePickerSimD.TabIndex = 116;
-            // 
-            // dateTimePickerMedDue
-            // 
-            this.dateTimePickerMedDue.Enabled = false;
-            this.dateTimePickerMedDue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerMedDue.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerMedDue.Location = new System.Drawing.Point(492, 113);
-            this.dateTimePickerMedDue.Name = "dateTimePickerMedDue";
-            this.dateTimePickerMedDue.Size = new System.Drawing.Size(141, 29);
-            this.dateTimePickerMedDue.TabIndex = 117;
-            // 
-            // dateTimePickerUdzDue
-            // 
-            this.dateTimePickerUdzDue.Enabled = false;
-            this.dateTimePickerUdzDue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerUdzDue.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerUdzDue.Location = new System.Drawing.Point(492, 164);
-            this.dateTimePickerUdzDue.Name = "dateTimePickerUdzDue";
-            this.dateTimePickerUdzDue.Size = new System.Drawing.Size(141, 29);
-            this.dateTimePickerUdzDue.TabIndex = 118;
-            // 
-            // dateTimePickerVrDue
-            // 
-            this.dateTimePickerVrDue.Enabled = false;
-            this.dateTimePickerVrDue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerVrDue.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerVrDue.Location = new System.Drawing.Point(492, 210);
-            this.dateTimePickerVrDue.Name = "dateTimePickerVrDue";
-            this.dateTimePickerVrDue.Size = new System.Drawing.Size(141, 29);
-            this.dateTimePickerVrDue.TabIndex = 119;
-            // 
-            // dateTimePickerCompDue
-            // 
-            this.dateTimePickerCompDue.Enabled = false;
-            this.dateTimePickerCompDue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerCompDue.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerCompDue.Location = new System.Drawing.Point(492, 259);
-            this.dateTimePickerCompDue.Name = "dateTimePickerCompDue";
-            this.dateTimePickerCompDue.Size = new System.Drawing.Size(141, 29);
-            this.dateTimePickerCompDue.TabIndex = 120;
-            // 
-            // dateTimePickerSimDue
-            // 
-            this.dateTimePickerSimDue.Enabled = false;
-            this.dateTimePickerSimDue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePickerSimDue.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerSimDue.Location = new System.Drawing.Point(492, 307);
-            this.dateTimePickerSimDue.Name = "dateTimePickerSimDue";
-            this.dateTimePickerSimDue.Size = new System.Drawing.Size(141, 29);
-            this.dateTimePickerSimDue.TabIndex = 121;
             // 
             // SafetyCourses
             // 

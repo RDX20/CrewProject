@@ -59,8 +59,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonExit
@@ -291,9 +293,9 @@
             this.groupBox1.Controls.Add(this.textBoxPassword);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBoxUsername);
-            this.groupBox1.Location = new System.Drawing.Point(1, 79);
+            this.groupBox1.Location = new System.Drawing.Point(1, 76);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(393, 377);
+            this.groupBox1.Size = new System.Drawing.Size(393, 386);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             // 
@@ -409,17 +411,29 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(636, 445);
+            this.label21.Location = new System.Drawing.Point(636, 447);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(120, 25);
             this.label21.TabIndex = 32;
             this.label21.Text = "Record No:";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(404, 84);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(388, 360);
+            this.dataGridView1.TabIndex = 33;
             // 
             // DoubleDutyEntry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 507);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox19);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.panel2);
@@ -435,6 +449,7 @@
             this.panel2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -472,5 +487,6 @@
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

@@ -33,7 +33,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
@@ -46,7 +45,6 @@
             this.buttonModify = new System.Windows.Forms.Button();
             this.buttonFind = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.textBoxCmsId = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
@@ -58,6 +56,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonBack = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
+            this.comboBoxStatus = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -105,21 +105,12 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(10, 319);
+            this.label15.Location = new System.Drawing.Point(10, 317);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(194, 25);
             this.label15.TabIndex = 40;
             this.label15.Text = "Non-Running Duty:";
             this.label15.Click += new System.EventHandler(this.label15_Click);
-            // 
-            // textBox13
-            // 
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(15, 347);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(312, 29);
-            this.textBox13.TabIndex = 39;
-            this.textBox13.TextChanged += new System.EventHandler(this.textBox13_TextChanged);
             // 
             // label16
             // 
@@ -277,15 +268,6 @@
             this.label19.Text = "Leave:";
             this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
-            // textBox17
-            // 
-            this.textBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.Location = new System.Drawing.Point(15, 261);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(312, 29);
-            this.textBox17.TabIndex = 23;
-            this.textBox17.TextChanged += new System.EventHandler(this.textBox17_TextChanged);
-            // 
             // label20
             // 
             this.label20.AutoSize = true;
@@ -414,11 +396,37 @@
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label24.Click += new System.EventHandler(this.label1_Click);
             // 
+            // comboBoxStatus
+            // 
+            this.comboBoxStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxStatus.FormattingEnabled = true;
+            this.comboBoxStatus.Items.AddRange(new object[] {
+            "Leave"});
+            this.comboBoxStatus.Location = new System.Drawing.Point(15, 264);
+            this.comboBoxStatus.Name = "comboBoxStatus";
+            this.comboBoxStatus.Size = new System.Drawing.Size(274, 28);
+            this.comboBoxStatus.TabIndex = 106;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Non-Running Duty"});
+            this.comboBox1.Location = new System.Drawing.Point(15, 347);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(274, 28);
+            this.comboBox1.TabIndex = 107;
+            // 
             // NonRunningDuty
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 507);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBoxStatus);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox11);
@@ -428,7 +436,6 @@
             this.Controls.Add(this.textBoxCodeS);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label23);
-            this.Controls.Add(this.textBox13);
             this.Controls.Add(this.textBoxCrewName);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label22);
@@ -439,7 +446,6 @@
             this.Controls.Add(this.textBox15);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.buttonSearch);
-            this.Controls.Add(this.textBox17);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.textBoxDate);
@@ -464,7 +470,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.Label label17;
@@ -477,7 +482,6 @@
         private System.Windows.Forms.Button buttonModify;
         private System.Windows.Forms.Button buttonFind;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox textBoxCmsId;
         private System.Windows.Forms.Label label21;
@@ -489,5 +493,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Button buttonBack;
+        private System.Windows.Forms.ComboBox comboBoxStatus;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

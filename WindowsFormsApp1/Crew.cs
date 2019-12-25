@@ -5,16 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Data;
+using System.IO;
 
 namespace WindowsFormsApp1
 {
     class Crew
     {
         Connect conn = new Connect();
-        public bool insertCrew(String status, String fatherName,String cmsId, DateTime dob, DateTime doa, DateTime dotc, String initAppoint, String qualify, String Address1, String Address2, Int32 phNo1,Int32 phNo2, String email, String bloodGroup, String vision, Char gradation, String lobby, Int32 proper, String cliCodeName, String remarks )
+        public bool insertCrew(String status, String fatherName,String cmsId, DateTime dob, DateTime doa, DateTime dotc, String initAppoint, String qualify, String Address1, String Address2, Int32 phNo1,Int32 phNo2, String email, String bloodGroup, String vision, Char gradation, String lobby, Int32 proper, String cliCodeName, String remarks, byte[] image )
         {
             MySqlCommand command = new MySqlCommand();
-            String insertQuery = "INSERT INTO `biodata`(`Status`, `FatherName`, `CmsId`, `Dob`, `Doa`, `Dotc`, `InitAppoint`, `Qualify`, `Address1`, `Address2`, `PhNo1`, `PhNo2`, `Email`, `BloodGroup`, `Vision`, `Gradation`, `Lobby`, `Proper`, `CliCodeName`, `Remarks`) VALUES (@stt,@fnm,@cms,@dob,@doa,@dotc,@initApp,@qual,@add1,@add2,@ph1,@ph2,@email,@bgrp,@vis,@grad,@lob,@prop,@cli,@rem)";
+            String insertQuery = "INSERT INTO `biodata`(`Status`, `FatherName`, `CmsId`, `Dob`, `Doa`, `Dotc`, `InitAppoint`, `Qualify`, `Address1`, `Address2`, `PhNo1`, `PhNo2`, `Email`, `BloodGroup`, `Vision`, `Gradation`, `Lobby`, `Proper`, `CliCodeName`, `Remarks`, `Image`) VALUES (@stt,@fnm,@cms,@dob,@doa,@dotc,@initApp,@qual,@add1,@add2,@ph1,@ph2,@email,@bgrp,@vis,@grad,@lob,@prop,@cli,@rem,@img)";
             command.CommandText = insertQuery;
             command.Connection = conn.GetConnection();
 
@@ -40,10 +41,11 @@ namespace WindowsFormsApp1
             command.Parameters.Add("@prop", MySqlDbType.Int32).Value = proper;
             command.Parameters.Add("@cli", MySqlDbType.VarChar).Value = cliCodeName;
             command.Parameters.Add("@rem", MySqlDbType.VarChar).Value = remarks;
+            command.Parameters.Add("@img", MySqlDbType.LongBlob).Value = image;
 
             conn.openConn();
-
-            if(command.ExecuteNonQuery() == 1)
+            int rowsAffected = command.ExecuteNonQuery();
+            if (rowsAffected>0)
             {
                 conn.closeConn();
                 return true;
@@ -83,6 +85,18 @@ namespace WindowsFormsApp1
             }
             else
                 return null;
+        }
+        
+        public byte[] imageup(String imglocation)
+        {
+            
+            MySqlCommand command = new MySqlCommand();
+            byte[] images = null;
+            FileStream stream = new FileStream(imglocation, FileMode.Open, FileAccess.Read);
+            BinaryReader binread = new BinaryReader(stream);
+            images = binread.ReadBytes((int)stream.Length);
+
+            return images;
         }
     }
 }

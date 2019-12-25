@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace WindowsFormsApp1
 {
@@ -46,6 +47,7 @@ namespace WindowsFormsApp1
             Int32 proper=0;
             String cliCodeName="";
             String remarks="";
+            byte[] image = null;
             try
             {
                 status = comboBoxStatus.SelectedItem.ToString();
@@ -68,6 +70,7 @@ namespace WindowsFormsApp1
                 proper = Convert.ToInt32(textBoxProper.Text);
                 cliCodeName = comboBoxCliCodeName.SelectedItem.ToString();
                 remarks = textBoxRemarks.Text;
+                image = crew.imageup(pictureBox.ImageLocation);
             }
             catch(Exception ex)
             {
@@ -94,7 +97,7 @@ namespace WindowsFormsApp1
             }
             else
             {
-                Boolean insertCrew = crew.insertCrew(status, fatherName, cmsId, dob, doa, dotc, initAppoint, qualify, Address1, Address2, phNo1, phNo2, email, bloodGroup, vision, gradation, lobby, proper, cliCodeName, remarks);
+                Boolean insertCrew = crew.insertCrew(status, fatherName, cmsId, dob, doa, dotc, initAppoint, qualify, Address1, Address2, phNo1, phNo2, email, bloodGroup, vision, gradation, lobby, proper, cliCodeName, remarks, image);
                 if (insertCrew)
                 {
                     MessageBox.Show("New Crew Data Inserted Successfully!", "Add Crew", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -126,6 +129,7 @@ namespace WindowsFormsApp1
             DataRow result = crew.searchcrew(crewid);
             if (result != null)
             {
+                MessageBox.Show("Matching record found for the given Crew Id!", "Record Found", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 textBoxCrewId.Text =Convert.ToString(crewid);
                 comboBoxStatus.SelectedItem = Convert.ToString(result[1]);
                 textBoxFatherName.Text = Convert.ToString(result[2]);
@@ -147,11 +151,39 @@ namespace WindowsFormsApp1
                 textBoxProper.Text = Convert.ToString(result[18]);
                 comboBoxCliCodeName.SelectedItem = Convert.ToString(result[19]);
                 textBoxRemarks.Text = Convert.ToString(result[20]);
+                byte[] img = (byte[])result[21];
+                MemoryStream ms = new MemoryStream(img);
+                pictureBox.Image = Image.FromStream(ms);
             }
             else
             {
                 MessageBox.Show("No record found for the given Crew Id!", "No Record Found", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void pictureBox_Click(object sender, EventArgs e)
+        {
+            String imglocation = "";
+            try
+            {
+                OpenFileDialog dialog = new OpenFileDialog();
+                dialog.Filter = "png files(*.png)|*.png|jpg files(*.jpg)|*.jpg|All files(*.*)|*.*";
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    imglocation = dialog.FileName.ToString();
+                    pictureBox.ImageLocation = imglocation;
+
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message,"Upload image",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+        }
+
+        private void textBoxCrewId_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
